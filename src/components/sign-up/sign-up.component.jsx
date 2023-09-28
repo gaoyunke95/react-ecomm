@@ -94,7 +94,7 @@ const SignUpForm = () => {
           required
         ></FormInput>
 
-        <Button type='submit'>sign up</Button>
+        <Button buttonType='google-sign-in' type='submit'>sign up</Button>
       </form>
     </div>
   );
