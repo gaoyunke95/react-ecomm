@@ -1,4 +1,4 @@
-﻿import Button from "../button/button.componen";
+﻿import Button from "../button/button.component";
 import FormInput from "../form-input/form-input.component";
 import { useState } from "react";
 import {

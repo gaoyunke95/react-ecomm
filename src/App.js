@@ -3,15 +3,9 @@ import './App.scss';
 import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';
 import Authentication from './routes/auth/auth.component';
+import Shop from './routes/shop/shop.component'
 
 
-const Shop = () => {
-  return (
-    <div>
-      <h1>this is shop page</h1>
-    </div>
-  )
-}
 
 const App = () => {
   return (
