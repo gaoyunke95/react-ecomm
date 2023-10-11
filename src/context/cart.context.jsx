@@ -24,15 +24,9 @@ export const removeCartItem = (cartItems, productToRemove) => {
   return [...cartItems];
 }
 
-export const removeCartItemAll = (cartItems, productToRemove) => {
-  const existingCartItem = cartItems.find((cartItem) => cartItem.id === productToRemove.id);
-  if (existingCartItem) {
-    return cartItems
-        .map((cartItem) => cartItem.id === productToRemove.id ? {...cartItem, quantity: 0 } : cartItem)
-        .filter((cartItem) => cartItem.quantity >= 1);
-  }
-  return [...cartItems];
-}
+export const removeCartItemAll = (cartItems, productToRemove) => cartItems.filter((cartItem) => cartItem.id !== productToRemove.id);
+
+
 
 export const CartContext = createContext({
   isCartOpen: false,
